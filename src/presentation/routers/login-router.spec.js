@@ -236,7 +236,6 @@ describe('Login Router', () => {
 		expect(httpResponse.statusCode).toBe(500);
 	})
 
-
 	test('Should call EmailValidator with correct params', async () => {
 		const { sut, emailValidatorSpy } = makeSut();
 		const httpRequest = {
