@@ -154,8 +154,6 @@ describe('Auth UseCase', () => {
 		expect(updateAccessTokenRepositorySpy.accessToken).toBe(tokenGeneratorSpy.accessToken)
 	})
 
-
-
 	test('Should throw if invalid dependencies are provided', async () => {
 		const suts = [].concat(
 			new AuthUseCase(),
@@ -188,6 +186,18 @@ describe('Auth UseCase', () => {
 				loadUserByEmailRepository: makeLoadUserByEmailRepository(),
 				encrypter: makeEncrypter(),
 				tokenGenerator: {}
+			}),
+			new AuthUseCase({
+				loadUserByEmailRepository: makeLoadUserByEmailRepository(),
+				encrypter: makeEncrypter(),
+				tokenGenerator: makeTokenGenerator(),
+				updateAccessTokenRepository: null
+			}),
+			new AuthUseCase({
+				loadUserByEmailRepository: makeLoadUserByEmailRepository(),
+				encrypter: makeEncrypter(),
+				tokenGenerator: makeTokenGenerator(),
+				updateAccessTokenRepository: {}
 			}),
 		)
 		for (const sut of suts) {
