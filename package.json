@@ -4,5 +4,11 @@
   "main": "index.js",
   "repository": "https://github.com/brunobrante/clean-architecture-node.git",
   "author": "Bruno Brante <brunobrante@hotmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  },
+  "scripts": {
+    "test": "jest"
+  }
 }
