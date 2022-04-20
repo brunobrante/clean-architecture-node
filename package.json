@@ -1,0 +1,8 @@
+{
+  "name": "clean-architecture-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/brunobrante/clean-architecture-node.git",
+  "author": "Bruno Brante <brunobrante@hotmail.com>",
+  "license": "MIT"
+}
