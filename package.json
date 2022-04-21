@@ -10,7 +10,7 @@
 		"jest": "^27.5.1"
 	},
 	"scripts": {
-		"test": "jest --watch",
+		"test": "jest --watchAll",
 		"test:staged": "jest --passWithNoTests --findRelatedTests"
 	},
 	"dependencies": {
