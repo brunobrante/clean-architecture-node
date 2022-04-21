@@ -7,7 +7,7 @@
 	"license": "MIT",
 	"scripts": {
 		"dev": "node src/main/index.js",
-		"test": "jest --watchAll",
+		"test": "jest --watch",
 		"test:staged": "jest --passWithNoTests --findRelatedTests"
 	},
 	"dependencies": {
