@@ -1,22 +1,24 @@
 {
 	"name": "clean-architecture-node",
 	"version": "1.0.0",
-	"main": "index.js",
+	"main": "src/main/index.js",
 	"repository": "https://github.com/brunobrante/clean-architecture-node.git",
 	"author": "Bruno Brante <brunobrante@hotmail.com>",
 	"license": "MIT",
-	"devDependencies": {
-		"@shelf/jest-mongodb": "^2.2.1",
-		"jest": "^27.5.1"
-	},
 	"scripts": {
+		"dev": "node src/main/index.js",
 		"test": "jest --watchAll",
 		"test:staged": "jest --passWithNoTests --findRelatedTests"
 	},
 	"dependencies": {
 		"bcrypt": "^5.0.1",
+		"express": "^4.17.3",
 		"jsonwebtoken": "^8.5.1",
 		"mongodb": "^4.5.0",
 		"validator": "^13.7.0"
+	},
+	"devDependencies": {
+		"@shelf/jest-mongodb": "^2.2.1",
+		"jest": "^27.5.1"
 	}
 }
